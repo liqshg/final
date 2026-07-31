@@ -13,6 +13,39 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+.header_box .select--box {
+  width: 160px;
+  height: 105px;
+  display: flex;
+  flex-direction: column;
+  border: 1px black solid;
+  border-top: none;
+  border-radius: 0 0 20px 20px;
+  position: absolute;
+  left: 157px;
+  top: 64px;
+}
+.close .header_box .select--box--option {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: black;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  height: 35px;
+}
+.close .header_box .select--box--option:nth-child(3) {
+  border-radius: 0 0 20px 20px;
+}
+.close .header_box .select--box--option:hover {
+  background-color: #F1F1F1;
+  transition: 0.3s ease-in-out;
 }
 .header_box--info {
   width: 100%;
@@ -27,6 +60,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header_box--info--nav--select {
+  width: 100%;
+  max-width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: black;
 }
 .header_box--info--nav--link {
   font-family: Montserrat Alternates;
@@ -44,4 +94,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header_box--user--button {
+  width: 100%;
+  max-width: 40px;
+  border: none;
+  border-radius: 12px;
+  background-color: #7A7A7A;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  cursor: pointer;
+}
+.header_box--user--button--moon {
+  display: none;
+}
+.header_box--user--text {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  color: black;
 }/*# sourceMappingURL=style.css.map */
