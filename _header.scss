@@ -1,0 +1,44 @@
+.header_box {
+    width: 100%;
+    max-width: 1090px;
+    margin: 0 auto;
+    padding: 21px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--info {
+        width: 100%;
+        max-width: 544px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--nav {
+            width: 100%;
+            max-width: 370px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &--link {
+                font-family: Montserrat Alternates;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 12px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+
+    &--user{
+        width: 100%;
+        max-width: 185px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
