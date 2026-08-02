@@ -19,8 +19,9 @@
         position: absolute;
         left: 157px;
         top: 64px;
-
-        .close
+        // display: none;
+        
+                transition: 0.3s;
 
         &--option {
             font-family: Montserrat Alternates;
@@ -46,6 +47,10 @@
         }
 
 
+    }
+
+    .close {
+        display: none;
     }
 
     &--info {
@@ -104,7 +109,7 @@
 
         &--button {
             width: 100%;
-            max-width: 40px;
+            max-width: 43px;
             border: none;
             border-radius: 12px;
             background-color: #7A7A7A;
@@ -113,11 +118,16 @@
             align-items: center;
             cursor: pointer;
 
+            .moveR {
+                transform: translateX(21.5px);
+            }
 
-            &--sun {}
+            .moveL {
+                transform: translateX(-21.5px);
+            }
 
-            &--moon {
-                display: none;
+            #img {
+                transition: 0.3s;
             }
         }
 
