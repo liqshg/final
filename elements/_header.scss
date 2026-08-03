@@ -1,3 +1,4 @@
+
 .header_box {
     width: 100%;
     max-width: 1090px;
@@ -20,6 +21,7 @@
         left: 157px;
         top: 64px;
         // display: none;
+        z-index: 4;
         
                 transition: 0.3s;
 
@@ -49,8 +51,18 @@
 
     }
 
+    #arrow{
+        transition: 0.3s ease;
+    }
+
     .close {
-        display: none;
+        // display: none;
+        opacity: 0;
+        transition: 0.3s ease;
+    }
+
+    .rotate {
+        transform: rotate(180deg);
     }
 
     &--info {
@@ -143,3 +155,16 @@
         }
     }
 }
+
+
+
+
+.greet{
+    background-color: black;
+    width: 576px;
+    height: 316px;
+    border-radius: 20px;
+}
+
+
+

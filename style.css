@@ -26,6 +26,8 @@
   position: absolute;
   left: 157px;
   top: 64px;
+  z-index: 4;
+  transition: 0.3s;
 }
 .header_box .select--box--option {
   font-family: Montserrat Alternates;
@@ -47,8 +49,15 @@
   background-color: #F1F1F1;
   transition: 0.3s ease-in-out;
 }
+.header_box #arrow {
+  transition: 0.3s ease;
+}
 .header_box .close {
-  display: none;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.header_box .rotate {
+  transform: rotate(180deg);
 }
 .header_box--info {
   width: 100%;
@@ -109,9 +118,6 @@
   align-items: center;
   cursor: pointer;
 }
-.header_box--user--button .hide {
-  opacity: 0;
-}
 .header_box--user--button .moveR {
   transform: translateX(21.5px);
 }
@@ -130,4 +136,11 @@
   letter-spacing: 0%;
   text-align: right;
   color: black;
+}
+
+.greet {
+  background-color: black;
+  width: 576px;
+  height: 316px;
+  border-radius: 20px;
 }/*# sourceMappingURL=style.css.map */

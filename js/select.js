@@ -6,5 +6,6 @@ select.classList.add("close")
 
 btnOpenSelect.addEventListener("click", () => {
     select.classList.toggle("close")
+    arrow.classList.toggle("rotate")
 })
 
