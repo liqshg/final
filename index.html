@@ -8,25 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="body">
+    <div class="back" id="back"></div>
     <header class="header">
-        <div class="greet">
-            <div class="greet_box">
-                <p class="greet_box--text">Привіт! <br>
-                    Ви потрапили на сайт інтерактивних ігор та завдань<br>
-                    Надіємось, що вам сподобається і ви отримаєте позитивні емоції! <br>
-                    Бажаємо Вам гарно провести час!</p>
-                <div class="greet_box--info">
-                    <p class="greet_box--info--title">Введіть своє ім’я:</p>
-                    <input class="greet_box--info--input" type="text" placeholder="Ваше ім’я...">
-                    <button class="greet_box--info--button">Зберегти</button>
-                </div>
-            </div>
-            <img class="greet_box--sword" src="./img/sword.svg" alt="sword">
-            <img class="greet_box--puzzle" src="./img/puzzle.svg" alt="puzzle">
-            <img class="greet_box--gamedevelopment" src="./img/gamedevelopment.svg" alt="gamedevelopment">
-            <img class="greet_box--tictac" src="./img/tictac.svg" alt="tictac">
-        </div>
         <div class="header_box">
             <div class="header_box--info">
                 <img class="header_box--info--img" src="./img/Group 4.svg" alt="logo">
@@ -50,12 +34,36 @@
 
                     <img id="img" class="header_box--user--button--sun" src="./img/sun.svg" alt="sun">
                 </button>
-                <h4 class="header_box--user--text">Вітаємо, <span>User</span> !</h4>
+                <h4 class="header_box--user--text">Вітаємо, <span id="userName">User</span> !</h4>
             </div>
         </div>
     </header>
+    <div class="greet" id="modal">
+        <img id="modalClose" class="greet--close" src="./img/close.svg" alt="close">
+        <div class="greet_box">
+            <p class="greet_box--text">Привіт! <br>
+                Ви потрапили на сайт інтерактивних ігор та завдань<br>
+                Надіємось, що вам сподобається і ви отримаєте позитивні емоції! <br>
+                Бажаємо Вам гарно провести час!</p>
+            <div class="greet_box--info">
+                <p class="greet_box--info--title">Введіть своє ім’я:</p>
+                <input id="input-modal" class="greet_box--info--input" type="text" placeholder="Ваше ім’я...">
+                <button id="btnSubmit" type="submit" class="greet_box--info--button">Зберегти</button>
+            </div>
+        </div>
+        <img class="greet--sword" src="./img/sword.svg" alt="sword">
+        <img class="greet--puzzle" src="./img/puzzle.svg" alt="puzzle">
+        <img class="greet--gamedevelopment" src="./img/gamedevelopment.svg" alt="gamedevelopment">
+        <img class="greet--tictac" src="./img/tictac.svg" alt="tictac">
+    </div>
+
+
+    <main id="main">
+
+    </main>
     <script src="js/select.js"></script>
     <script src="js/theme.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
