@@ -110,6 +110,37 @@
                 <p id="textSsc" class="games--ssc--text">Раунд виграв .......</p>
                 <button id="btnSsc" class="games--ssc--comp">Варіант комп’ютера</button>
             </div>
+            <div class="games--line"></div>
+            <div class="games--calc">
+                <h3 class="games--calc--title">Калькулятор</h3>
+                <div class="games--calc_container">
+                    <input id="calcInput1" class="games--calc_container--input" type="text" placeholder="Введіть число">
+                    <div class="games--calc_container--box">
+                        <button id="btnPls" class="games--calc_container--box--btn click">+</button>
+                        <button id="btnMltpl" class="games--calc_container--box--btn click">*</button>
+                        <button id="btnMns" class="games--calc_container--box--btn click">-</button>
+                        <button id="btnDvd" class="games--calc_container--box--btn click">/</button>
+                    </div>
+                    <input id="calcInput2" class="games--calc_container--input" type="text" placeholder="Введіть число">
+                    <button id="btnEql" class="games--calc_container--box--btn">=</button>
+                    <button id="calcResult" class="games--calc_container--result">Результат</button>
+                </div>
+            </div>
+            <div class="games--line"></div>
+            <div class="games--time">
+                <h3 class="games--time--title">Калькулятор часу</h3>
+                <div class="games--time_container">
+                    <button class="games--time_container--left">
+                        <input id="inputGame2" class="games--time_container--left--input" type="text"
+                            placeholder="Введіть число">
+                            <div id="btnGame2" class="games--time_container--left--btn"><img src="./img/search.svg" alt=""></div>
+                        </input>
+                    </button>
+                    <img src="./img/dotsTime.svg" alt="dots">
+                    <p>00:00</p>
+                </div>
+            </div>
+            <div class="games--line"></div>
         </section>
     </main>
     <script src="js/select.js"></script>
@@ -118,6 +149,7 @@
     <script src="js/games/game1.js"></script>
     <script src="js/games/game2.js"></script>
     <script src="js/games/game3.js"></script>
+    <script src="js/games/game4.js"></script>
 </body>
 
 </html>
