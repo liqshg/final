@@ -69,7 +69,8 @@
                     <button class="games--birth--bottom--left">
                         <input id="inputGame1" class="games--birth--bottom--left--input" type="text"
                             placeholder="Введіть рік народження">
-                            <div id="btnGame1" class="games--birth--bottom--left--btn"><img src="./img/search.svg" alt=""></div>
+                        <div id="btnGame1" class="games--birth--bottom--left--btn"><img src="./img/search.svg" alt="">
+                        </div>
                         </input>
                     </button>
                     <p id="birthText" class="games--birth--bottom--text">Ви народилися у ............. рік!</p>
@@ -82,7 +83,8 @@
                     <button class="games--number--bottom--left">
                         <input id="inputGame2" class="games--number--bottom--left--input" type="text"
                             placeholder="Введіть число">
-                            <div id="btnGame2" class="games--number--bottom--left--btn"><img src="./img/search.svg" alt=""></div>
+                        <div id="btnGame2" class="games--number--bottom--left--btn"><img src="./img/search.svg" alt="">
+                        </div>
                         </input>
                     </button>
                     <p id="birthText2" class="games--number--bottom--text">Комп'ютер загадав .........</p>
@@ -131,16 +133,21 @@
                 <h3 class="games--time--title">Калькулятор часу</h3>
                 <div class="games--time_container">
                     <button class="games--time_container--left">
-                        <input id="inputGame2" class="games--time_container--left--input" type="text"
+                        <input id="inputGame5" class="games--time_container--left--input" type="text"
                             placeholder="Введіть число">
-                            <div id="btnGame2" class="games--time_container--left--btn"><img src="./img/search.svg" alt=""></div>
+                        <div id="btnGame5" class="games--time_container--left--btn"><img src="./img/search.svg" alt="">
+                        </div>
                         </input>
                     </button>
                     <img src="./img/dotsTime.svg" alt="dots">
-                    <p>00:00</p>
+                    <p id="timeResult" class="games--time_container--text">00дн. 00:00</p>
                 </div>
             </div>
             <div class="games--line"></div>
+            <div class="games--dino">
+                <h3 class="games--dino--title">Google динозавр</h3>
+                <iframe src="/dino.html" style="    width: 700px;    border: 0;    overflow: hidden;    height: 380px; border-radius: 50px;"></iframe>
+            </div>
         </section>
     </main>
     <script src="js/select.js"></script>
@@ -150,6 +157,7 @@
     <script src="js/games/game2.js"></script>
     <script src="js/games/game3.js"></script>
     <script src="js/games/game4.js"></script>
+    <script src="js/games/game5.js"></script>
 </body>
 
 </html>

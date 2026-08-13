@@ -697,4 +697,113 @@
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
   border-radius: 20px;
   padding: 10px 20px;
+}
+.games--time {
+  width: 100%;
+  max-width: 576px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.games--time--title {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  padding-bottom: 36px;
+}
+.games--time_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.games--time_container--left {
+  width: 215px;
+  height: 35px;
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
+  background-color: #D7D7D7;
+  padding: 10px 0 10px 10px;
+  border-radius: 20px;
+  border: none;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: left;
+}
+.games--time_container--left--input {
+  background-color: transparent;
+  border: none;
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+}
+.games--time_container--left--input::-moz-placeholder {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 11.5px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #7E7E7E;
+}
+.games--time_container--left--input::placeholder {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 11.5px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #7E7E7E;
+}
+.games--time_container--left--input:focus {
+  outline: none;
+}
+.games--time_container--left--btn {
+  width: 35px;
+  height: 35px;
+  background-color: #000000;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+.games--time_container--text {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  color: black;
+}
+.games--dino {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.games--dino--title {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  padding-bottom: 36px;
 }/*# sourceMappingURL=style.css.map */
