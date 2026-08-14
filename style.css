@@ -806,4 +806,42 @@
   letter-spacing: 0%;
   color: #000000;
   padding-bottom: 36px;
+}
+.games--football {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.games--football--title {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  padding-bottom: 36px;
+}
+.games--football--box {
+  width: 700px;
+  height: 220px;
+  background-color: #5ABB58;
+  border: 2px solid #000000;
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+}
+.games--football--box--ball {
+  position: absolute;
+  top: 85px;
+  left: 92px;
+  transition: 0.5s;
+}
+.games--football--box .rotateR {
+  transform: rotate(360deg);
+}
+.games--football--box .rotateL {
+  transform: rotate(-360deg);
 }/*# sourceMappingURL=style.css.map */

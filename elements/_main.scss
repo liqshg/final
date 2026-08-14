@@ -397,17 +397,17 @@
                     transition: 0.3s;
                     cursor: pointer;
 
-                    &:hover{
+                    &:hover {
                         background-color: #7E7E7E;
                     }
 
-                    .click{
+                    .click {
                         background-color: #1F8081;
                     }
                 }
             }
 
-            &--result{
+            &--result {
                 background-color: #D7D7D7;
                 border: none;
                 font-family: Montserrat Alternates;
@@ -520,7 +520,7 @@
         }
     }
 
-    &--dino{
+    &--dino {
         width: 100%;
         max-width: 700px;
         display: flex;
@@ -536,6 +536,50 @@
             letter-spacing: 0%;
             color: #000000;
             padding-bottom: 36px;
+        }
+    }
+
+    &--football {
+        width: 100%;
+        max-width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--title {
+            font-family: Montserrat Alternates;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #000000;
+            padding-bottom: 36px;
+        }
+
+        &--box {
+            width: 700px;
+            height: 220px;
+            background-color: #5ABB58;
+            border: 2px solid #000000;
+            border-radius: 25px;
+            position: relative;
+            cursor: pointer;
+
+            &--ball {
+                position: absolute;
+                top: 85px;
+                left: 92px;
+                transition: 0.5s;
+            }
+
+            .rotateR{
+                transform: rotate(360deg);
+            }
+
+            .rotateL{
+                transform: rotate(-360deg);
+            }
         }
     }
 }

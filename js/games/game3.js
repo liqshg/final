@@ -13,6 +13,8 @@ function reset() {
         userPaper.style.backgroundColor = "#000000"
         btnSsc.textContent = "Варіант комп’ютера"
         textSsc.textContent = "Раунд виграв ......."
+        
+        textSsc.style.color = "#039900"
     }, 3000)
 }
 
@@ -35,6 +37,7 @@ userStone.addEventListener("click", () => {
     } else if (randomItem === "compPaper") {
         btnSsc.textContent = "Папір"
         textSsc.textContent = "Комп’ютер виграв раунд!"
+        textSsc.style.color = "#990000"
         comp += 1
     } else if (randomItem === "compScissors") {
         btnSsc.textContent = "Ножиці"
@@ -64,6 +67,7 @@ userScissors.addEventListener("click", () => {
     if (randomItem === "compStone") {
         btnSsc.textContent = "Камінь"
         textSsc.textContent = "Комп’ютер виграв раунд!"
+        textSsc.style.color = "#990000"
         comp += 1
     } else if (randomItem === "compPaper") {
         btnSsc.textContent = "Папір"
@@ -106,6 +110,7 @@ userPaper.addEventListener("click", () => {
     } else if (randomItem === "compScissors") {
         btnSsc.textContent = "Ножиці"
         textSsc.textContent = "Комп’ютер виграв раунд!"
+        textSsc.style.color = "#990000"
         comp += 1
     }
 
