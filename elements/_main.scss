@@ -573,12 +573,256 @@
                 transition: 0.5s;
             }
 
-            .rotateR{
+            .rotateR {
                 transform: rotate(360deg);
             }
 
-            .rotateL{
+            .rotateL {
                 transform: rotate(-360deg);
+            }
+        }
+    }
+
+    &--maxnum {
+        width: 100%;
+        max-width: 483px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 36px;
+
+        &--title {
+            font-family: Montserrat Alternates;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #000000;
+        }
+
+        &--box {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &--input {
+                font-family: Montserrat Alternates;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 12px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #000000;
+                width: 135px;
+                box-shadow: 3px 3px 0px 0px #00000040;
+                background-color: #D7D7D7;
+                border: none;
+                border-radius: 20px;
+                padding: 10px 20px;
+
+                &::placeholder {
+                    font-family: Montserrat Alternates;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 12px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    color: #7E7E7E;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        &--text {
+            font-family: Montserrat Alternates;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 12px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #000000;
+        }
+    }
+
+    &--slider {
+        width: 100%;
+        max-width: 904px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--title {
+            font-family: Montserrat Alternates;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: #000000;
+            padding-bottom: 36px;
+        }
+
+        &--container {
+            width: 100%;
+            max-width: 904px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            &--l {
+                margin-top: 25px;
+                cursor: pointer;
+            }
+
+            &--r {
+                margin-top: 25px;
+                cursor: pointer;
+            }
+
+            &--box {
+                width: 100%;
+                max-width: 600px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &--card {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 20px;
+
+                    &--img1 {
+                        width: 150px;
+                        height: 150px;
+                        background-image: url("./img/Albert_Einstein_Head.jpg");
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        border: 3px solid #055051;
+                        border-radius: 20px;
+                    }
+
+                    &--img2 {
+                        width: 150px;
+                        height: 150px;
+                        background-image: url("./img/Portrait_of_Sir_Isaac_Newton,_1689_(brightened).jpg");
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        border: 3px solid #055051;
+                        border-radius: 20px;
+                    }
+
+                    &--img3 {
+                        width: 150px;
+                        height: 150px;
+                        background-image: url("./img/Justus_Sustermans_-_Portrait_of_Galileo_Galilei,_1636.jpg");
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        border: 3px solid #055051;
+                        border-radius: 20px;
+                    }
+
+                    &--img4 {
+                        width: 150px;
+                        height: 150px;
+                        background-image: url("./img/Portrait_of_Marie_Curie.jpg");
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        border: 3px solid #055051;
+                        border-radius: 20px;
+                    }
+
+                    &--img5 {
+                        width: 150px;
+                        height: 150px;
+                        background-image: url("./img/Portrait_Confused_With_Johannes_Kepler_1610.jpg");
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        border: 3px solid #055051;
+                        border-radius: 20px;
+                    }
+
+                    &--img6 {
+                        width: 150px;
+                        height: 150px;
+                        background-image: url("./img/Nikolaus_Kopernikus.jpg");
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        border: 3px solid #055051;
+                        border-radius: 20px;
+                    }
+
+                    &--img7 {
+                        width: 150px;
+                        height: 150px;
+                        background-image: url("./img/Max_Planck_(1858-1947).jpg");
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        border: 3px solid #055051;
+                        border-radius: 20px;
+                    }
+
+                    &--title {
+                        font-family: 'Montserrat Alternates';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #000000;
+                    }
+
+                    &--text {
+                        font-family: 'Montserrat Alternates';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 15px;
+                        color: #000000;
+                    }
+                }
+
+                &--dots {
+                    width: 100%;
+                    max-width: 174px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 24px;
+
+                    &--dot {
+                        width: 18px;
+                        height: 3px;
+                        background-color: #D9D9D9;
+                        transition: 0.3s;
+                        border-radius: 3px;
+                        cursor: pointer;
+
+                        &.active {
+                            height: 3px;
+                            transition: 0.3s;
+                            border-radius: 3px;
+                            width: 30px;
+                            background-color: #797979;
+                        }
+
+                        &:hover{
+                            transition: 0.3s;
+                            background-color: #8ACECF;
+                        }
+                    }
+                }
             }
         }
     }
