@@ -41,3 +41,7 @@ dots.forEach((dot,index)=>{
         showCard()
     })
 })
+
+
+
+// $('.games--birth, .games--number, .games--ssc, .games--calc, .games--time, .games--maxnum, .games--slider').hide();

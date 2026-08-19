@@ -817,11 +817,198 @@
                             background-color: #797979;
                         }
 
-                        &:hover{
+                        &:hover {
                             transition: 0.3s;
                             background-color: #8ACECF;
                         }
                     }
+                }
+            }
+        }
+    }
+
+    &--science {
+        width: 100%;
+        max-width: 857px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--title {
+            font-family: 'Montserrat Alternates';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000000;
+            padding-bottom: 36px;
+        }
+
+        &--container {
+            width: 100%;
+            max-width: 575px;
+            height: 370px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            column-gap: 59px;
+            row-gap: 36px;
+            margin-bottom: 36px;
+
+            &--box {
+                width: 100px;
+                height: 100px;
+                border-radius: 20px;
+                border: 2px solid #055051;
+                border-radius: 20px;
+                background: rgba(0, 0, 0, 0.4);
+
+                // &:nth-child(1) {
+                //     background-image: url("./img/Albert_Einstein_Head.jpg");
+                //     background-size: cover;
+                //     background-position: center;
+                // }
+
+                // &:nth-child(2) {
+                //     background-image: url("./img/Portrait_of_Sir_Isaac_Newton,_1689_(brightened).jpg");
+                //     background-size: cover;
+                //     background-position: center;
+                // }
+
+                // &:nth-child(3) {
+                //     background-image: url("./img/Justus_Sustermans_-_Portrait_of_Galileo_Galilei,_1636.jpg");
+                //     background-size: cover;
+                //     background-position: center;
+                // }
+
+                // &:nth-child(4) {
+                //     background-image: url("./img/Portrait_of_Marie_Curie.jpg");
+                //     background-size: cover;
+                //     background-position: center;
+                // }
+
+                // &:nth-child(5) {
+                //     background-image: url("./img/Portrait_Confused_With_Johannes_Kepler_1610.jpg");
+                //     background-size: cover;
+                //     background-position: center;
+                // }
+
+                // &:nth-child(6) {
+                //     background-image: url("./img/Nikolaus_Kopernikus.jpg");
+                //     background-size: cover;
+                //     background-position: center;
+                // }
+
+                // &:nth-child(7) {
+                //     background-image: url("./img/Max_Planck_(1858-1947).jpg");
+                //     background-size: cover;
+                //     background-position: center;
+                // }
+
+                // &:nth-child(8) {
+                //     background-image: url("./img/319-master_1.jpg");
+                //     background-size: cover;
+                //     background-position: center;
+                // }
+
+                // &:nth-child(9) {
+                //     background-image: url("./img/Ada_Lovelace_portrait.jpg");
+                //     background-size: cover;
+                //     background-position: center;
+                // }
+
+                // &:nth-child(10) {
+                //     background-image: url("./img/images.jpg");
+                //     background-size: cover;
+                //     background-position: center;
+                // }
+
+                // &:nth-child(11) {
+                //     background-image: url("./img/Lise_Meitner12.jpg");
+                //     background-size: cover;
+                //     background-position: center;
+                // }
+
+                // &:nth-child(12) {
+                //     background-image: url("./img/images (1).jpg");
+                //     background-size: cover;
+                //     background-position: center;
+                // }
+            }
+        }
+
+        &--tasks {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 36px;
+            row-gap: 20px;
+            align-items: center;
+
+            &--btn {
+                padding: 10px 19px;
+                background: #000000;
+                box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+                border-radius: 20px;
+                font-family: Montserrat Alternates;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 12px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-align: right;
+                color: white;
+                border: none;
+                text-align: left;
+                cursor: pointer;
+
+                &:nth-child(odd) {
+                    justify-self: end;
+                }
+
+                &:nth-child(even) {
+                    justify-self: start;
+                }
+
+                &:nth-child(1) {
+                    width: 227px;
+                }
+
+                &:nth-child(2) {
+                    width: 298px;
+                }
+
+                &:nth-child(3) {
+                    width: 282px;
+                }
+
+                &:nth-child(4) {
+                    width: 441px;
+                }
+
+                &:nth-child(5) {
+                    width: 380px;
+                }
+
+                &:nth-child(6) {
+                    width: 375px;
+                }
+
+                &:nth-child(7) {
+                    width: 329px;
+                    height: 32px;
+                }
+
+                &:nth-child(8) {
+                    width: 368px;
+                    height: 50px;
+                    line-height: 15px;
+                }
+
+                &:last-child {
+                    width: 489px;
+                    grid-column: 1/-1;
+                    justify-self: center;
                 }
             }
         }

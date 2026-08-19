@@ -27,6 +27,7 @@
   position: absolute;
   left: 157px;
   top: 64px;
+  background-color: white;
   z-index: 4;
   transition: 0.3s;
 }
@@ -1070,4 +1071,104 @@
 .games--slider--container--box--dots--dot:hover {
   transition: 0.3s;
   background-color: #8ACECF;
+}
+.games--science {
+  width: 100%;
+  max-width: 857px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.games--science--title {
+  font-family: "Montserrat Alternates";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  padding-bottom: 36px;
+}
+.games--science--container {
+  width: 100%;
+  max-width: 575px;
+  height: 370px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  -moz-column-gap: 59px;
+       column-gap: 59px;
+  row-gap: 36px;
+  margin-bottom: 36px;
+}
+.games--science--container--box {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  border: 2px solid #055051;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.games--science--tasks {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 36px;
+       column-gap: 36px;
+  row-gap: 20px;
+  align-items: center;
+}
+.games--science--tasks--btn {
+  padding: 10px 19px;
+  background: #000000;
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  color: white;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+.games--science--tasks--btn:nth-child(odd) {
+  justify-self: end;
+}
+.games--science--tasks--btn:nth-child(even) {
+  justify-self: start;
+}
+.games--science--tasks--btn:nth-child(1) {
+  width: 227px;
+}
+.games--science--tasks--btn:nth-child(2) {
+  width: 298px;
+}
+.games--science--tasks--btn:nth-child(3) {
+  width: 282px;
+}
+.games--science--tasks--btn:nth-child(4) {
+  width: 441px;
+}
+.games--science--tasks--btn:nth-child(5) {
+  width: 380px;
+}
+.games--science--tasks--btn:nth-child(6) {
+  width: 375px;
+}
+.games--science--tasks--btn:nth-child(7) {
+  width: 329px;
+  height: 32px;
+}
+.games--science--tasks--btn:nth-child(8) {
+  width: 368px;
+  height: 50px;
+  line-height: 15px;
+}
+.games--science--tasks--btn:last-child {
+  width: 489px;
+  grid-column: 1/-1;
+  justify-self: center;
 }/*# sourceMappingURL=style.css.map */
