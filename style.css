@@ -6,6 +6,22 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color--white: #FFFFFF;
+  --color--black: #000000;
+  --color--secondary: #055051;
+}
+
+.dark {
+  --color--white: #013E3F;
+  --color--black: #F8F8F8;
+  --color--secondary: #D7D7D7;
+}
+
+.header {
+  background-color: var(--color--white);
+}
+
 .header_box {
   width: 100%;
   max-width: 1090px;
@@ -21,13 +37,13 @@
   height: 105px;
   display: flex;
   flex-direction: column;
-  border: 1px black solid;
+  border: 1px var(--color--black) solid;
   border-top: none;
   border-radius: 0 0 20px 20px;
   position: absolute;
   left: 157px;
   top: 64px;
-  background-color: white;
+  background-color: var(--color--white);
   z-index: 4;
   transition: 0.3s;
 }
@@ -38,7 +54,7 @@
   font-size: 12px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: black;
+  color: var(--color--black);
   border: none;
   background-color: transparent;
   width: 100%;
@@ -55,6 +71,9 @@
 .header_box #arrow {
   transition: 0.3s ease;
 }
+.header_box #arrow path {
+  stroke: var(--color--black);
+}
 .header_box .close {
   opacity: 0;
   transition: 0.3s ease;
@@ -68,6 +87,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header_box--info--img .stroke {
+  stroke: var(--color--black);
+}
+.header_box--info--img .fill {
+  fill: var(--color--black);
 }
 .header_box--info--nav {
   width: 100%;
@@ -91,7 +116,7 @@
   font-size: 12px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: black;
+  color: var(--color--black);
 }
 .header_box--info--nav--link {
   font-family: Montserrat Alternates;
@@ -101,7 +126,7 @@
   line-height: 100%;
   letter-spacing: 0%;
   text-decoration: none;
-  color: black;
+  color: var(--color--black);
 }
 .header_box--user {
   width: 100%;
@@ -122,7 +147,7 @@
   cursor: pointer;
 }
 .header_box--user--button .moveR {
-  transform: translateX(21.5px);
+  transform: translateX(22.5px);
 }
 .header_box--user--button .moveL {
   transform: translateX(-21.5px);
@@ -138,7 +163,7 @@
   line-height: 100%;
   letter-spacing: 0%;
   text-align: right;
-  color: black;
+  color: var(--color--black);
 }
 
 #body {
@@ -157,7 +182,7 @@
 }
 
 .greet {
-  background-color: #F1F1F1;
+  background-color: #FFFFFF;
   width: 576px;
   height: 316px;
   border-radius: 20px;
@@ -298,16 +323,19 @@
   background-color: #EEEEEE;
 }
 
+.mainBg {
+  background-color: #5E5E5E;
+}
+
 .games {
   width: 100%;
   max-width: 1090px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 36px;
   align-items: center;
   padding: 36px 0;
-  background-color: white;
+  background-color: var(--color--white);
 }
 .games--title {
   font-family: Montserrat Alternates;
@@ -316,12 +344,13 @@
   font-size: 24px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: black;
+  color: var(--color--black);
 }
 .games--line {
   width: 536px;
   height: 0;
-  border: 1px solid #000000;
+  border: 1px solid black;
+  margin: 36px 0;
 }
 .games--birth {
   width: 100%;
@@ -337,7 +366,7 @@
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #000000;
+  color: var(--color--black);
   padding-bottom: 36px;
 }
 .games--birth--bottom {
@@ -356,8 +385,7 @@
   border: none;
   z-index: 1;
   position: relative;
-  display: flex;
-  align-items: left;
+  text-align: left;
 }
 .games--birth--bottom--left--input {
   background-color: transparent;
@@ -413,7 +441,7 @@
   line-height: 100%;
   letter-spacing: 0%;
   text-align: right;
-  color: black;
+  color: var(--color--black);
   width: 100%;
   max-width: 230px;
 }
@@ -431,7 +459,7 @@
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #000000;
+  color: var(--color--black);
   padding-bottom: 36px;
 }
 .games--number--bottom {
@@ -507,7 +535,7 @@
   line-height: 100%;
   letter-spacing: 0%;
   text-align: right;
-  color: black;
+  color: var(--color--black);
   width: 100%;
   max-width: 230px;
 }
@@ -526,7 +554,7 @@
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #000000;
+  color: var(--color--black);
 }
 .games--ssc_container {
   width: 100%;
@@ -551,7 +579,7 @@
   font-size: 12px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #000000;
+  color: var(--color--black);
 }
 .games--ssc_container--box {
   width: 60px;
@@ -585,8 +613,8 @@
   font-size: 12px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: white;
-  background-color: black;
+  color: var(--color--white);
+  background-color: var(--color--black);
   width: 182px;
   height: 35px;
   border: none;
@@ -608,7 +636,7 @@
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #000000;
+  color: var(--color--black);
 }
 .games--calc_container {
   width: 100%;
@@ -663,7 +691,7 @@
 .games--calc_container--box--btn {
   width: 25px;
   height: 25px;
-  background-color: #000000;
+  background-color: var(--color--black);
   box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2509803922);
   font-family: Montserrat Alternates;
   font-weight: 400;
@@ -671,7 +699,7 @@
   font-size: 12px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: white;
+  color: var(--color--white);
   padding: 4px 8px;
   border: none;
   border-radius: 20px;
@@ -713,7 +741,7 @@
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #000000;
+  color: var(--color--black);
   padding-bottom: 36px;
 }
 .games--time_container {
@@ -789,7 +817,7 @@
   line-height: 100%;
   letter-spacing: 0%;
   text-align: right;
-  color: black;
+  color: var(--color--black);
 }
 .games--dino {
   width: 100%;
@@ -805,7 +833,7 @@
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #000000;
+  color: var(--color--black);
   padding-bottom: 36px;
 }
 .games--football {
@@ -822,14 +850,14 @@
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #000000;
+  color: var(--color--black);
   padding-bottom: 36px;
 }
 .games--football--box {
   width: 700px;
   height: 220px;
   background-color: #5ABB58;
-  border: 2px solid #000000;
+  border: 2px solid var(--color--black);
   border-radius: 25px;
   position: relative;
   cursor: pointer;
@@ -861,7 +889,7 @@
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #000000;
+  color: var(--color--black);
 }
 .games--maxnum--box {
   width: 100%;
@@ -912,7 +940,7 @@
   font-size: 12px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #000000;
+  color: var(--color--black);
 }
 .games--slider {
   width: 100%;
@@ -928,7 +956,7 @@
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #000000;
+  color: var(--color--black);
   padding-bottom: 36px;
 }
 .games--slider--container {
@@ -967,7 +995,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border: 3px solid #055051;
+  border: 3px solid var(--color--secondary);
   border-radius: 20px;
 }
 .games--slider--container--box--card--img2 {
@@ -977,7 +1005,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border: 3px solid #055051;
+  border: 3px solid var(--color--secondary);
   border-radius: 20px;
 }
 .games--slider--container--box--card--img3 {
@@ -987,7 +1015,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border: 3px solid #055051;
+  border: 3px solid var(--color--secondary);
   border-radius: 20px;
 }
 .games--slider--container--box--card--img4 {
@@ -997,7 +1025,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border: 3px solid #055051;
+  border: 3px solid var(--color--secondary);
   border-radius: 20px;
 }
 .games--slider--container--box--card--img5 {
@@ -1007,7 +1035,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border: 3px solid #055051;
+  border: 3px solid var(--color--secondary);
   border-radius: 20px;
 }
 .games--slider--container--box--card--img6 {
@@ -1017,7 +1045,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border: 3px solid #055051;
+  border: 3px solid var(--color--secondary);
   border-radius: 20px;
 }
 .games--slider--container--box--card--img7 {
@@ -1027,7 +1055,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border: 3px solid #055051;
+  border: 3px solid var(--color--secondary);
   border-radius: 20px;
 }
 .games--slider--container--box--card--title {
@@ -1036,7 +1064,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #000000;
+  color: var(--color--black);
 }
 .games--slider--container--box--card--text {
   font-family: "Montserrat Alternates";
@@ -1044,7 +1072,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
-  color: #000000;
+  color: var(--color--black);
 }
 .games--slider--container--box--dots {
   width: 100%;
@@ -1085,7 +1113,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #000000;
+  color: var(--color--black);
   padding-bottom: 36px;
 }
 .games--science--container {
@@ -1104,7 +1132,7 @@
   width: 100px;
   height: 100px;
   border-radius: 20px;
-  border: 2px solid #055051;
+  border: 2px solid var(--color--secondary);
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.4);
 }
@@ -1119,7 +1147,7 @@
 }
 .games--science--tasks--btn {
   padding: 10px 19px;
-  background: #000000;
+  background: var(--color--black);
   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   font-family: Montserrat Alternates;
@@ -1129,7 +1157,7 @@
   line-height: 100%;
   letter-spacing: 0%;
   text-align: right;
-  color: white;
+  color: var(--color--white);
   border: none;
   text-align: left;
   cursor: pointer;
@@ -1171,4 +1199,140 @@
   width: 489px;
   grid-column: 1/-1;
   justify-self: center;
+}
+
+.footer {
+  background-color: var(--color--white);
+}
+
+.footer_container {
+  width: 100%;
+  max-width: 1091px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+  align-items: center;
+}
+.footer_container--logo .stroke {
+  stroke: var(--color--black);
+}
+.footer_container--logo .fill {
+  fill: var(--color--black);
+}
+.footer_container--nav {
+  width: 100%;
+  max-width: 207px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer_container--nav--link {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 170%;
+  letter-spacing: 0%;
+  color: var(--color--black);
+  text-decoration: none;
+}
+.footer_container--subscribe {
+  width: 100%;
+  max-width: 347px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+.footer_container--subscribe--box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_container--subscribe--box--input {
+  width: 204px;
+  height: 35px;
+  background-color: #D7D7D7;
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+}
+.footer_container--subscribe--box--input::-moz-placeholder {
+  color: #7E7E7E;
+}
+.footer_container--subscribe--box--input::placeholder {
+  color: #7E7E7E;
+}
+.footer_container--subscribe--box--input:focus {
+  outline: none;
+}
+.footer_container--subscribe--box--btn {
+  width: 107px;
+  height: 35px;
+  background-color: var(--color--black);
+  border-radius: 20px;
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--color--white);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+.footer_container--subscribe--text {
+  font-family: Montserrat Alternates;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 6px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--color--black);
+}
+
+.popup {
+  background-image: url("./img/popupBg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 463px;
+  height: 245px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 7;
+}
+.popup--close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+.popup--text {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #000000;
+  padding-top: 83px;
+}
+
+.close {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

@@ -1,3 +1,7 @@
+.header{
+    background-color: var(--color--white);
+}
+
 .header_box {
     width: 100%;
     max-width: 1090px;
@@ -13,14 +17,14 @@
         height: 105px;
         display: flex;
         flex-direction: column;
-        border: 1px black solid;
+        border: 1px var(--color--black) solid;
         border-top: none;
         border-radius: 0 0 20px 20px;
         position: absolute;
         left: 157px;
         top: 64px;
         // display: none;
-        background-color: white;
+        background-color: var(--color--white);
         z-index: 4;
 
         transition: 0.3s;
@@ -32,7 +36,7 @@
             font-size: 12px;
             line-height: 100%;
             letter-spacing: 0%;
-            color: black;
+            color:  var(--color--black);
             border: none;
             background-color: transparent;
             width: 100%;
@@ -56,6 +60,10 @@
         transition: 0.3s ease;
     }
 
+    #arrow path {
+        stroke: var(--color--black);
+    }
+
     .close {
         // display: none;
         opacity: 0;
@@ -72,6 +80,15 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        &--img{
+            .stroke{
+                stroke: var(--color--black);
+            }
+            .fill{
+                fill: var(--color--black);
+            }
+        }
 
         &--nav {
             width: 100%;
@@ -95,7 +112,7 @@
                 font-size: 12px;
                 line-height: 100%;
                 letter-spacing: 0%;
-                color: black;
+                color:  var(--color--black);
             }
 
             &--link {
@@ -106,7 +123,7 @@
                 line-height: 100%;
                 letter-spacing: 0%;
                 text-decoration: none;
-                color: black;
+                color:  var(--color--black);
             }
         }
     }
@@ -132,7 +149,7 @@
             cursor: pointer;
 
             .moveR {
-                transform: translateX(21.5px);
+                transform: translateX(22.5px);
             }
 
             .moveL {
@@ -152,7 +169,7 @@
             line-height: 100%;
             letter-spacing: 0%;
             text-align: right;
-            color: black;
+            color:  var(--color--black);
         }
     }
 }
@@ -175,7 +192,7 @@
 
 
     .greet {
-        background-color: #F1F1F1;
+        background-color: #FFFFFF;
         width: 576px;
         height: 316px;
         border-radius: 20px;

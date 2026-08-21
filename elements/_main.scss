@@ -1,9 +1,13 @@
+
 .main {
     background-image: url("./img/bgFinalWhite.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #EEEEEE;
+}
 
+.mainBg{
+    background-color: #5E5E5E;
 }
 
 .games {
@@ -12,10 +16,10 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    // gap: 36px;
     align-items: center;
     padding: 36px 0;
-    background-color: white;
+    background-color: var(--color--white);
 
     &--title {
         font-family: Montserrat Alternates;
@@ -24,13 +28,14 @@
         font-size: 24px;
         line-height: 100%;
         letter-spacing: 0%;
-        color: black;
+        color: var(--color--black);
     }
 
     &--line {
         width: 536px;
         height: 0;
-        border: 1px solid #000000
+        border: 1px solid black;
+        margin: 36px 0;
     }
 
     &--birth {
@@ -47,7 +52,7 @@
             font-size: 16px;
             line-height: 100%;
             letter-spacing: 0%;
-            color: #000000;
+            color: var(--color--black);
             padding-bottom: 36px;
         }
 
@@ -67,8 +72,7 @@
                 border: none;
                 z-index: 1;
                 position: relative;
-                display: flex;
-                align-items: left;
+                text-align: left;
 
                 &--input {
                     background-color: transparent;
@@ -122,7 +126,7 @@
                 line-height: 100%;
                 letter-spacing: 0%;
                 text-align: right;
-                color: black;
+                color: var(--color--black);
                 width: 100%;
                 max-width: 230px;
             }
@@ -143,7 +147,7 @@
             font-size: 16px;
             line-height: 100%;
             letter-spacing: 0%;
-            color: #000000;
+            color: var(--color--black);
             padding-bottom: 36px;
         }
 
@@ -218,7 +222,7 @@
                 line-height: 100%;
                 letter-spacing: 0%;
                 text-align: right;
-                color: black;
+                color: var(--color--black);
                 width: 100%;
                 max-width: 230px;
             }
@@ -240,7 +244,7 @@
             font-size: 16px;
             line-height: 100%;
             letter-spacing: 0%;
-            color: #000000;
+            color: var(--color--black);
         }
 
         &_container {
@@ -266,7 +270,7 @@
                     font-size: 12px;
                     line-height: 100%;
                     letter-spacing: 0%;
-                    color: #000000;
+                    color: var(--color--black);
                 }
             }
 
@@ -306,8 +310,9 @@
             font-size: 12px;
             line-height: 100%;
             letter-spacing: 0%;
-            color: white;
-            background-color: black;
+            color: var(--color--white);
+            background-color: var(--color--black);
+            ;
             width: 182px;
             height: 35px;
             border: none;
@@ -331,8 +336,7 @@
             font-size: 16px;
             line-height: 100%;
             letter-spacing: 0%;
-
-            color: #000000;
+            color: var(--color--black);
         }
 
         &_container {
@@ -382,7 +386,7 @@
                 &--btn {
                     width: 25px;
                     height: 25px;
-                    background-color: #000000;
+                    background-color: var(--color--black);
                     box-shadow: 3px 3px 0px 0px #00000040;
                     font-family: Montserrat Alternates;
                     font-weight: 400;
@@ -390,7 +394,7 @@
                     font-size: 12px;
                     line-height: 100%;
                     letter-spacing: 0%;
-                    color: white;
+                    color: var(--color--white);
                     padding: 4px 8px;
                     border: none;
                     border-radius: 20px;
@@ -440,7 +444,7 @@
             font-size: 16px;
             line-height: 100%;
             letter-spacing: 0%;
-            color: #000000;
+            color: var(--color--black);
             padding-bottom: 36px;
         }
 
@@ -515,7 +519,7 @@
                 line-height: 100%;
                 letter-spacing: 0%;
                 text-align: right;
-                color: black;
+                color: var(--color--black);
             }
         }
     }
@@ -534,7 +538,7 @@
             font-size: 16px;
             line-height: 100%;
             letter-spacing: 0%;
-            color: #000000;
+            color: var(--color--black);
             padding-bottom: 36px;
         }
     }
@@ -553,7 +557,7 @@
             font-size: 16px;
             line-height: 100%;
             letter-spacing: 0%;
-            color: #000000;
+            color: var(--color--black);
             padding-bottom: 36px;
         }
 
@@ -561,7 +565,8 @@
             width: 700px;
             height: 220px;
             background-color: #5ABB58;
-            border: 2px solid #000000;
+            border: 2px solid var(--color--black);
+            ;
             border-radius: 25px;
             position: relative;
             cursor: pointer;
@@ -598,7 +603,7 @@
             font-size: 16px;
             line-height: 100%;
             letter-spacing: 0%;
-            color: #000000;
+            color: var(--color--black);
         }
 
         &--box {
@@ -645,7 +650,7 @@
             font-size: 12px;
             line-height: 100%;
             letter-spacing: 0%;
-            color: #000000;
+        color: var(--color--black);
         }
     }
 
@@ -663,7 +668,7 @@
             font-size: 16px;
             line-height: 100%;
             letter-spacing: 0%;
-            color: #000000;
+        color: var(--color--black);
             padding-bottom: 36px;
         }
 
@@ -705,7 +710,7 @@
                         background-size: cover;
                         background-position: center;
                         background-repeat: no-repeat;
-                        border: 3px solid #055051;
+                        border: 3px solid var(--color--secondary);
                         border-radius: 20px;
                     }
 
@@ -716,7 +721,7 @@
                         background-size: cover;
                         background-position: center;
                         background-repeat: no-repeat;
-                        border: 3px solid #055051;
+                        border: 3px solid var(--color--secondary);
                         border-radius: 20px;
                     }
 
@@ -727,7 +732,7 @@
                         background-size: cover;
                         background-position: center;
                         background-repeat: no-repeat;
-                        border: 3px solid #055051;
+                        border: 3px solid var(--color--secondary);
                         border-radius: 20px;
                     }
 
@@ -738,7 +743,7 @@
                         background-size: cover;
                         background-position: center;
                         background-repeat: no-repeat;
-                        border: 3px solid #055051;
+                        border: 3px solid var(--color--secondary);
                         border-radius: 20px;
                     }
 
@@ -749,7 +754,7 @@
                         background-size: cover;
                         background-position: center;
                         background-repeat: no-repeat;
-                        border: 3px solid #055051;
+                        border: 3px solid var(--color--secondary);
                         border-radius: 20px;
                     }
 
@@ -760,7 +765,7 @@
                         background-size: cover;
                         background-position: center;
                         background-repeat: no-repeat;
-                        border: 3px solid #055051;
+                        border: 3px solid var(--color--secondary);
                         border-radius: 20px;
                     }
 
@@ -771,7 +776,7 @@
                         background-size: cover;
                         background-position: center;
                         background-repeat: no-repeat;
-                        border: 3px solid #055051;
+                        border: 3px solid var(--color--secondary);
                         border-radius: 20px;
                     }
 
@@ -781,7 +786,7 @@
                         font-weight: 400;
                         font-size: 14px;
                         line-height: 17px;
-                        color: #000000;
+                        color: var(--color--black);
                     }
 
                     &--text {
@@ -790,7 +795,7 @@
                         font-weight: 400;
                         font-size: 12px;
                         line-height: 15px;
-                        color: #000000;
+                        color: var(--color--black);
                     }
                 }
 
@@ -840,7 +845,7 @@
             font-weight: 400;
             font-size: 16px;
             line-height: 20px;
-            color: #000000;
+                        color: var(--color--black);
             padding-bottom: 36px;
         }
 
@@ -859,81 +864,9 @@
                 width: 100px;
                 height: 100px;
                 border-radius: 20px;
-                border: 2px solid #055051;
+                border: 2px solid var(--color--secondary);;
                 border-radius: 20px;
                 background: rgba(0, 0, 0, 0.4);
-
-                // &:nth-child(1) {
-                //     background-image: url("./img/Albert_Einstein_Head.jpg");
-                //     background-size: cover;
-                //     background-position: center;
-                // }
-
-                // &:nth-child(2) {
-                //     background-image: url("./img/Portrait_of_Sir_Isaac_Newton,_1689_(brightened).jpg");
-                //     background-size: cover;
-                //     background-position: center;
-                // }
-
-                // &:nth-child(3) {
-                //     background-image: url("./img/Justus_Sustermans_-_Portrait_of_Galileo_Galilei,_1636.jpg");
-                //     background-size: cover;
-                //     background-position: center;
-                // }
-
-                // &:nth-child(4) {
-                //     background-image: url("./img/Portrait_of_Marie_Curie.jpg");
-                //     background-size: cover;
-                //     background-position: center;
-                // }
-
-                // &:nth-child(5) {
-                //     background-image: url("./img/Portrait_Confused_With_Johannes_Kepler_1610.jpg");
-                //     background-size: cover;
-                //     background-position: center;
-                // }
-
-                // &:nth-child(6) {
-                //     background-image: url("./img/Nikolaus_Kopernikus.jpg");
-                //     background-size: cover;
-                //     background-position: center;
-                // }
-
-                // &:nth-child(7) {
-                //     background-image: url("./img/Max_Planck_(1858-1947).jpg");
-                //     background-size: cover;
-                //     background-position: center;
-                // }
-
-                // &:nth-child(8) {
-                //     background-image: url("./img/319-master_1.jpg");
-                //     background-size: cover;
-                //     background-position: center;
-                // }
-
-                // &:nth-child(9) {
-                //     background-image: url("./img/Ada_Lovelace_portrait.jpg");
-                //     background-size: cover;
-                //     background-position: center;
-                // }
-
-                // &:nth-child(10) {
-                //     background-image: url("./img/images.jpg");
-                //     background-size: cover;
-                //     background-position: center;
-                // }
-
-                // &:nth-child(11) {
-                //     background-image: url("./img/Lise_Meitner12.jpg");
-                //     background-size: cover;
-                //     background-position: center;
-                // }
-
-                // &:nth-child(12) {
-                //     background-image: url("./img/images (1).jpg");
-                //     background-size: cover;
-                //     background-position: center;
-                // }
             }
         }
 
@@ -947,7 +880,7 @@
 
             &--btn {
                 padding: 10px 19px;
-                background: #000000;
+                background: var(--color--black);;
                 box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25);
                 border-radius: 20px;
                 font-family: Montserrat Alternates;
@@ -957,7 +890,7 @@
                 line-height: 100%;
                 letter-spacing: 0%;
                 text-align: right;
-                color: white;
+                color: var(--color--white);
                 border: none;
                 text-align: left;
                 cursor: pointer;

@@ -113,16 +113,10 @@ function clear() {
     boxCont.innerHTML = ""
 }
 
-function reset(){
-    setTimeout(()=>{
-        clear()
-        create(scientists)
-    }, 3000)
-}
 
 function create(scientists) {
     scientists.forEach((obj) => {
-        const HTML = `<div style="display: flex; flex-direction: column; align-items: center; justify-content: center;" class="games--science--container--box">
+        const HTML = `<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer;" class="games--science--container--box">
             <p  style="font-family: Montserrat Alternates; font-size: 12px; font-weight: 400; font-style: normal; color: white;">${obj.name}</p>
             <p  style="font-family: Montserrat Alternates; font-size: 12px; font-weight: 400; font-style: normal; color: white;">${obj.surname}</p>
             <p  style="font-family: Montserrat Alternates; font-size: 12px; font-weight: 400; font-style: normal; color: white;">${obj.born}-${obj.dead}</p>
@@ -141,6 +135,13 @@ function create(scientists) {
     })
 }
 
+function reset() {
+    setTimeout(() => {
+        clear()
+        create(scientists)
+    }, 4000)
+}
+
 clear()
 create(scientists)
 
@@ -148,13 +149,14 @@ btn1.addEventListener("click", () => {
     clear();
     const res1 = scientists.filter((scientist) => scientist.born > 1800 && scientist.born <= 1900)
     create(res1)
+    reset()
 })
 
 btn2.addEventListener("click", () => {
     clear();
     const res2 = scientists.filter((scientist) => scientist.born === 1879)
     create(res2)
-    console.log(3)
+    reset()
 })
 
 btn3.addEventListener("click", () => {
@@ -162,12 +164,14 @@ btn3.addEventListener("click", () => {
     const res3 = [...scientists].sort((a, b) => a.name.localeCompare(b.name))
     // const res = scientists.toSorted((a,b) => a.name.localeCompare(b.name))
     create(res3)
+    reset()
 })
 
 btn4.addEventListener("click", () => {
     clear();
     const res4 = scientists.filter((scientist) => scientist.surname.startsWith("C"))
     create(res4)
+    reset()
 })
 
 btn5.addEventListener("click", () => {
@@ -176,12 +180,14 @@ btn5.addEventListener("click", () => {
         return (b.dead - b.born) - (a.dead - a.born)
     })
     create(res5)
+    reset()
 })
 
 btn6.addEventListener("click", () => {
     clear();
     const res6 = scientists.filter((scientist) => !scientist.name.startsWith("A"))
     create(res6)
+    reset()
 })
 
 btn7.addEventListener("click", () => {
@@ -189,6 +195,7 @@ btn7.addEventListener("click", () => {
     const max = Math.max(...scientists.map((scientist) => scientist.born))
     const res7 = scientists.filter((scientist) => scientist.born === max)
     create(res7)
+    reset()
 })
 
 btn8.addEventListener("click", () => {
@@ -199,6 +206,7 @@ btn8.addEventListener("click", () => {
     const res82 = scientists.filter((scientist) => (scientist.dead - scientist.born) === minL)
     create(res81)
     create(res82)
+    reset()
 })
 
 
@@ -208,4 +216,5 @@ btn9.addEventListener("click", () => {
         return scientist.name.startsWith(scientist.surname[0])
     })
     create(res9)
+    reset()
 })

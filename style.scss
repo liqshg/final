@@ -7,7 +7,19 @@
     box-sizing: border-box
 }
 
+:root {
+    --color--white: #FFFFFF;
+    --color--black: #000000;
+    --color--secondary: #055051;
+}
+
+.dark {
+    --color--white: #013E3F;
+    --color--black: #F8F8F8;
+    --color--secondary: #D7D7D7;
+}
 
 @import "./elements/_header.scss";
 @import "./elements/_main.scss";
+@import "./elements/_footer.scss";
 
